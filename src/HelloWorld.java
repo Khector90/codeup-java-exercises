@@ -1,9 +1,10 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        byte x = 12;
+        float myNumber = (float) 3.14;
+        double myNumberDouble = myNumber;
 
-
-        System.out.println(x);
+        System.out.println(myNumber);
+        System.out.println(myNumberDouble);
 
     }
 }
