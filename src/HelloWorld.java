@@ -1,7 +1,9 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        String myString = 'c';
-        System.out.print(myString);
+        byte x = 12;
+
+
+        System.out.println(x);
 
     }
 }
