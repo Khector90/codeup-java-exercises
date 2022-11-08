@@ -7,16 +7,16 @@ public class ConsoleExercises {
         Scanner scanner = new Scanner(System.in);
 
 //        System.out.printf("Please enter a number: ");
-////        int userInput = scanner.nextInt();
+//        int userInput = scanner.nextInt();
 //
 //        System.out.println("Is this your number " + userInput);
 
-        System.out.print("Please enter 3 words: ");
-        String userInput1 = scanner.next();
-        String userInput2 = scanner.next();
-        String userInput3 = scanner.next();
+        System.out.print("Sentence go here ");
+        String userInput1 = scanner.nextLine();
+//        String userInput2 = scanner.next();
+//        String userInput3 = scanner.next();
 
-        System.out.print("Words: " + "\n" + userInput1 + "\n" + userInput2 + "\n" + userInput3);
+        System.out.print(userInput1);
 
     }
 }
