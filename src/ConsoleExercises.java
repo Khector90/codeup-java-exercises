@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import static java.lang.Integer.parseInt;
+
 public class ConsoleExercises {
     public static void main(String[] args) {
         double pi = 3.14159;
@@ -11,12 +13,27 @@ public class ConsoleExercises {
 //
 //        System.out.println("Is this your number " + userInput);
 
-        System.out.print("Sentence go here ");
-        String userInput1 = scanner.nextLine();
+        System.out.print("Enter a width ");
+        int userInput1 = parseInt(scanner.nextLine());
 //        String userInput2 = scanner.next();
 //        String userInput3 = scanner.next();
+        System.out.print("Enter length ");
+        int userInput2 = parseInt(scanner.nextLine());
 
-        System.out.print(userInput1);
+        int totalWidth = userInput1 * userInput2;
+
+
+        System.out.print(totalWidth);
+
+
+
+
+
+
+
+
+
+
 
     }
 }
