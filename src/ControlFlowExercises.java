@@ -1,17 +1,18 @@
 public class ControlFlowExercises {
     public static void main(String[] args){
-        int i = 5;
-        while (i <= 15) {
-            System.out.println("i is " + i++);
-            }
-        int  a = 0;
+//        int i = 5;
+//        while (i <= 15) {
+//            System.out.println("i is " + i++);
+//            }
+        int  i = 105;
 
         do {
-            System.out.println(a);
-            a += 2;
+            System.out.println(i -= 5);
 
 
-        } while(a < 102);
+
+
+        } while(i >= -10);
 
 
     }
