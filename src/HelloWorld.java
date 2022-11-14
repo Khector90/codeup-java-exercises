@@ -1,10 +1,12 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        float myNumber = (float) 3.14;
-        double myNumberDouble = myNumber;
-
-        System.out.println(myNumber);
-        System.out.println(myNumberDouble);
+     int myNumber = 420;
+     boolean shouldBlazeIt = true;
+     char charmander = 'c';
+     double moneyInTheBank = 500.36;
+     long speedOfLight = 299792458L;
+     String bestAuthor = "Steve";
 
     }
 }
+
