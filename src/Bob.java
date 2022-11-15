@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-
+//
 //public class Bob {
 //    String hey(String remark) {
 //        if (isYelling(remark) && isAQuestion(remark)) {
@@ -15,14 +15,5 @@ import java.util.Scanner;
 //            return "Whatever.";
 //        }
 //
-//        private boolean isAQuestion (String remark){
-//            return remark.trim().endsWith("?");
-//        }
-//        private boolean isYelling (String remark){
-//            return remark.equals(remark.toUpperCase()) && !remark.equals(remark.toLowerCase());
-//        }
-//        private boolean isSilence (String remark){
-//            return remark.trim().isEmpty();
-//        }
 //    }
 //}
