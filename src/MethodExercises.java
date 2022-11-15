@@ -2,20 +2,24 @@ import java.util.Scanner;
 
 public class MethodExercises {
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);//used to take the input
+        int first, second, add, subtract, multiply;
+        float divide;
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the first number:");
-        int x = scn.nextInt();//reads the input
+        System.out.print("Enter Two Numbers : ");
+        first = scanner.nextInt();
+        second = scanner.nextInt();
 
-        System.out.println("Enter the second number:");
-        int y = scn.nextInt();//reads the input
+        add = first + second;
+        subtract = first - second;
+        multiply = first * second;
+        divide = (float) first / second;
 
-        int sum = sumFunction(x,y);
-        System.out.println("Sum is " + sum);
+        System.out.println("Sum = " + add);
+        System.out.println("Difference = " + subtract);
+        System.out.println("Multiplication = " + multiply);
+        System.out.println("Division = " + divide);
     }
 
-    public static int sumFunction(int x, int y){
-        return x + y;
 
-    }
 }
