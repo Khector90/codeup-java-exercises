@@ -23,7 +23,17 @@ public class MethodExercises {
 
         // prompt user for number
             // save that number in 'userInput' = getInteger(1,10)
-        getInteger(1, 10);
+            System.out.println(getInteger(1, 10));
+
+            String userResp;
+            do{
+                int userInput = getInteger(1, 10);
+                factorial(userInput);
+                System.out.println("Would like to keep going?(y/n)");
+                userResp = scanner.next();
+
+            }while(userResp.equalsIgnoreCase("y"));
+
     }
     public static int getInteger(int min, int max) {
 
@@ -45,5 +55,23 @@ public class MethodExercises {
         System.out.println("Reenter a number within 1 to 10 please: ");
         return getInteger(min, max);
 
+    }
+//    question 3
+    public static long factorial(int num){
+            long solution = 1;
+            String fact = "";
+            for (int i = 1; i <= num; i++ ){
+                solution *= i;
+                if(i == 1){
+                    String stringFactorial = " " + i + "! = ";
+                    fact += i;
+                    System.out.println(stringFactorial + fact + "=" + solution);
+                }else{
+                    String stringFactorial = " " + i + "! = ";
+                    fact += " X " + i;
+                    System.out.println(stringFactorial + fact + "=" + solution);
+                }
+            }
+        return solution;
     }
 }
