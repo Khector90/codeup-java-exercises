@@ -34,6 +34,22 @@ public class MethodExercises {
 
             }while(userResp.equalsIgnoreCase("y"));
 
+            System.out.println("Welcome to dice!");
+            String userRes;
+            do{
+                System.out.println("What sided dice you using brah?");
+                int userInput = scanner.nextInt();
+                System.out.println("Roll motherfluffer (Y/N)");
+                String userChoice = scanner.next();
+                if (userChoice.equalsIgnoreCase("y")){
+                    System.out.println("first result: " + dice(userInput));
+                    System.out.println("second result: " + dice(userInput));
+                }
+                System.out.println("Want to keep rolling?(y/n");
+                userRes =scanner.next();
+            } while(userRes.equalsIgnoreCase("y"));
+            System.out.println("Thanks for the money");
+
     }
     public static int getInteger(int min, int max) {
 
@@ -73,5 +89,12 @@ public class MethodExercises {
                 }
             }
         return solution;
+    }
+//    question 4
+    public static int dice(int sides){
+            double diceRoll = Math.floor(Math.random() * sides);
+            int intRoll = (int)diceRoll;
+            return intRoll;
+
     }
 }
