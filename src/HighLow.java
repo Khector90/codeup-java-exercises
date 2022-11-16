@@ -13,7 +13,7 @@ public class HighLow {
         do{
             System.out.println("Choose a number btw 1-100");
             userInput = sc.nextInt();
-            MethodExercises.getInterger(1, 100);
+//            MethodExercises.getInterger(1, 100);
 
             if(userInput > randNum){
                 System.out.println("Lower that number brah");
