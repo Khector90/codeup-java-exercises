@@ -45,7 +45,7 @@ public class Input {
     // public makes it available -> more on that later
     // boolean -> this method is going to return a value of boolean type
     // yesNo -> just the name of the method
-    public boolean yesNo (){
+    public boolean yesNo(){
         //prompt a user
         System.out.println("Y/N?");
         // I need a scanner
