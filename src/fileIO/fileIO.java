@@ -1,5 +1,6 @@
 package fileIO;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -60,6 +61,42 @@ public class fileIO {
 
         System.out.println("dataDirectory = " + dataDirectory);
         System.out.println("dataFile = " + dataFile);
+
+//        Got the whole address - now let's ask java to do something at that Path
+
+//        if(directorDoesnotExist){do stuff}
+        if(Files.notExists(dataDirectory)){
+            Files.createDirectories(dataDirectory);
+        }
+
+//        if(fileDoesNotExist){do more stuff}
+        if(Files.notExists(dataFile)){
+            Files.createFile(dataFile);
+        }
+
+//        Allright - created directories and a file for the first time, I got a file to work with - how do I                interact with this file?
+
+//        Lets write some groceries into our groceryList.txt
+//        lets get the OAth for the file first
+        Path groceryListPath = Paths.get(directory, filename);
+
+        System.out.println("Files.exists(groceryListPath) = " + Files.exists(groceryListPath));
+
+
+//        That's WHERE we want to go, lets give it WHAT to send that way
+        List<String> groceryList = new ArrayList<>();
+
+        String item1 = "loaf of bread";
+
+        groceryList.add(item1);
+        groceryList.add("breakfast cereal");
+        groceryList.add("cat food");
+        groceryList.add("whole chicken");
+        groceryList.add("asparagus");
+
+
+        System.out.println("groceryList = " + groceryList);
+
 
 
     }
