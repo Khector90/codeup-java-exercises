@@ -23,7 +23,9 @@ public class ArraysExercises {
 
    }
 //   creating the add person method
+public static void addPerson(){
 
+}
 
     }
 
