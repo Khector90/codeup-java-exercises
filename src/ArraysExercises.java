@@ -15,21 +15,15 @@ public class ArraysExercises {
         dog[0] = new Dogs("Hobie");
         dog[1] = new Dogs("Shimmy");
         dog[2] = new Dogs("Jango");
-        Dogs Leai = new Dogs("Leai");
+         5rt
 
-        for(int i = 0; i < dog.length; i++){
-            System.out.println(dog[i].getDogs());
-        }
+
+
 
 
    }
 //   creating the add person method
-    public static Dogs  addDog (){
 
-   String[] Person = new ArrayList[];
-   ((ArrayList) Person).add("Edders");
-
-    }
 
     }
 
