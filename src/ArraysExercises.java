@@ -15,7 +15,7 @@ public class ArraysExercises {
         dog[0] = new Dogs("Hobie");
         dog[1] = new Dogs("Shimmy");
         dog[2] = new Dogs("Jango");
-         5rt
+
 
 
 
@@ -23,7 +23,9 @@ public class ArraysExercises {
 
    }
 //   creating the add person method
-public static void addPerson(){
+    int five = 5;
+public static void addPerson(Person[] array, Person newPerson){
+
 
 }
 
