@@ -12,7 +12,10 @@ public class MoviesApplication {
         Input movie = new Input();
         Movie[] movieList = Arrays.copyOf(MoviesArray.findAll(), 100);
         boolean running = true;
-
+        System.out.println(movieList.toString());
+//        for(Movie oneMovie : movieList){
+//            System.out.println(oneMovie.getGetName());
+//        }
         System.out.println("movies");
         System.out.println();
         MOVIES:
@@ -26,31 +29,49 @@ public class MoviesApplication {
             System.out.println("5 - view scifi");
 
             int choice = movie.getInt();
+
             for(int i = 0; i < movieList.length; i++){
+
                 if(choice == 1){
                     System.out.println(movieList[i].getGetName());
-                }if(choice == 2 && movieList[i].getCategory().equals("animated")){
+//                    System.out.println("i = " + i);
+//                    System.out.println("choice = " + choice);
+                }
+
+                else if(choice == 2 && movieList[i].getCategory().equals("animated")){
                     System.out.println("animations");
                     System.out.println(movieList[i].getGetName());
 //                    do the same thing as above for the next options
-                }if (choice == 3 && movieList[i].getCategory().equals("drama")) {
+                }
+
+                else if (choice == 3 && movieList[i].getCategory().equals("drama")) {
                     System.out.println("drama");
                     System.out.println(movieList[i].getGetName());
-                }if (choice == 4 && movieList[i].getCategory().equals("horror")) {
+                }
+
+                else if (choice == 4 && movieList[i].getCategory().equals("horror")) {
                     System.out.println("horror");
                     System.out.println(movieList[i].getGetName());
-                }if (choice == 3 && movieList[i].getCategory().equals("scifi")) {
+                }
+
+                else if (choice == 5 && movieList[i].getCategory().equals("scifi")) {
                     System.out.println("scifi");
                     System.out.println(movieList[i].getGetName());
-                    continue MOVIES;
-                }else{
-                attempt++;
-                break;
+//                    continue MOVIES;
                 }
+
             }
-              if (choice == 0){
+            attempt++;
+            if (choice == 0){
                   break;
               }
+
+              //if
+            // else if
+            // else if
+            // else if
+            // else if
+            // else (final thing)
         }
         System.out.println("thank you, please come again" + attempt);
     }
