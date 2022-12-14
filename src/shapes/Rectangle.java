@@ -1,16 +1,52 @@
 package shapes;
+
 import java.util.Scanner;
 
-public class Rectangle {
-    protected int length = 2;
-    protected int width = 2;
+public class Rectangle extends Quadrilateral implements Measurable {
 
+    protected int length;
+    protected int width;
 
-    public class getArea {
-        int area = length * width;
+    public Rectangle(int lengths, int widths) {
+        super(lengths, widths);
+        this.width = widths;
+        this.length = lengths;
+
     }
 
-    public class getPerimeter {
-        int perimeter = 2 * length + 2 * width;
+    @Override
+    void setLength(int length) {
     }
+
+    @Override
+    void setWidth(int width) {
+    }
+
+    public int getLengths() {
+        return length;
+    }
+
+    public int getWidths() {
+        return width;
+    }
+
+    public void setLengths(int lengths) {
+        this.length = lengths;
+    }
+
+    public void setWidths(int widths) {
+        this.width = widths;
+    }
+
+    public double getPerimeter() {
+        return (2 * length) + (2 * width);
+    }
+
+    public double getArea() {
+        return length * width;
+
+    }
+
+
 }
+
